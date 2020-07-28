@@ -1,3 +1,6 @@
+/**
+ * 冒泡排序
+ */
 class BubbleSort {
     public static int[] bubbleSort(int[] nums) {
         for (int i=0;i<nums.length;i++){
@@ -7,7 +10,6 @@ class BubbleSort {
                     nums[j] = nums[j+1];
                     nums[j+1] = temp;
                 }
-
             }
         }
         return nums;
