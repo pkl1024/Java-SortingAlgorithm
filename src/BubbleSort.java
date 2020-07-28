@@ -11,6 +11,7 @@ class BubbleSort {
                     nums[j+1] = temp;
                 }
 
+                //分步显示，帮助理解排序过程
                 /*for (int a:nums){
                     System.out.print(a+" ");
                 }

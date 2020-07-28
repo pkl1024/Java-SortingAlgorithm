@@ -2,7 +2,7 @@
  * 选择排序
  */
 class SelectionSort {
-    public static int[] selectionSort(int[] nums) {
+    public static int[] selectionSort(int[] nums) throws InterruptedException {
         for (int i=0;i<nums.length-1;i++){
             for (int j=i+1;j<nums.length;j++){
                 if (nums[i]>nums[j]){
@@ -10,6 +10,13 @@ class SelectionSort {
                     nums[i] = nums[j];
                     nums[j] = temp;
                 }
+
+                //分步显示，帮助理解排序过程
+                /*for (int a:nums){
+                    System.out.print(a+" ");
+                }
+                System.out.println();
+                Thread.sleep(1000);*/
             }
         }
         return nums;
