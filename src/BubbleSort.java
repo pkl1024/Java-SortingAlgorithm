@@ -1,11 +1,13 @@
 /**
- * 冒泡排序
+ * 冒泡排序:
+ * 从左到右遍历数组，当后一位比前一位小，则将后一位挪到前一位来。
+ * 时间复杂度为：O（n²）
  */
 class BubbleSort {
     /**
      *
-     * @param nums 需要排序的数组
-     * @return 排序完成的数组
+     * @param nums 需要排序的数组。
+     * @return 排序完成的数组。
      * @throws InterruptedException
      */
     public static int[] bubbleSort(int[] nums) throws InterruptedException {
