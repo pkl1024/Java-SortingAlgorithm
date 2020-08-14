@@ -10,7 +10,6 @@ class InsertSort {
             tag:for (int j=i-1;j>=0;j--){
                 if (temp < nums[j]){
                     nums[j+1] = nums[j];
-                    nums[j] = temp;
 
                 //分步显示，帮助理解排序过程
                 /*for (int a:nums){
@@ -20,6 +19,7 @@ class InsertSort {
                 Thread.sleep(1000);*/
 
                 }else {
+                    nums[j] = temp;
                     break tag;
                 }
 
